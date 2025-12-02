@@ -1,0 +1,58 @@
+{
+  "name": "smartdoc-rag",
+  "version": "1.0.0",
+  "description": "AI-Powered Document Processing & Knowledge Base Integration for RAG Systems",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": [
+    "RAG",
+    "document-processing",
+    "AI",
+    "knowledge-base",
+    "semantic-search",
+    "machine-learning"
+  ],
+  "author": "Vinesh Thota <vineshthota1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.6.0",
+    "openai": "^4.20.1",
+    "@pinecone-database/pinecone": "^1.1.2",
+    "sentence-transformers": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "joi": "^17.11.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VineshThota/new-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VineshThota/new-repo/issues"
+  },
+  "homepage": "https://github.com/VineshThota/new-repo#readme"
+}
